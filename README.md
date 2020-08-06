@@ -8,7 +8,7 @@ Its is contact View design made with SwiftUI
 </p>
 
 ## About
-- [x] It is an simple app with detecting the image you click on screen
+- [x] It is a design of Conatct view app which is made with the help SwiftUI
 
 
 ## Requirements
