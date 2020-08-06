@@ -10,7 +10,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        
+        NavigationView{
+        List(developers){ developer in
+            //we are aclling another swiftUI file
+            
+            NavigationLink( destination:Contact_Detail(image: developer.codename, detail: developer.about, name: developer.name)){
+                ContactView(codename: developer.codename,name:developer.name)
+            }
+            
+          
+            }.navigationBarTitle("Developers",displayMode: .large)
+            
+        }
     }
 }
 
